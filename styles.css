@@ -43,7 +43,7 @@ body {
 }
 /*comienza css de header*/
 header { 
-    background-image: url('imágenes/foto_fondo_header.png');
+    background-image: url('foto_fondo_header.png');
     background-size: cover;
     background-position: center;
     color: var(--color-detallesylinks);
