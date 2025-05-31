@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-fondo: #97522d;
+    --color-texto: black;
+    --color-primario: #83401d;
+    --color-secundario:#83741b;
+    --color-detallesylinks: white;
+
+
+    --color-header: #97862e;
+    --color-footer: #97862e;
+    --color-hover: #8d2535;
+    --color-borde: #d1bfa3;
+
+    --fuente-principal: "Red Hat Text", sans-serif;
+    --fuente-titulos: "Delius Swash Caps", cursive;
+    --espaciado-seccion: 2rem;
+    --ancho-maximo: 1000px;
+    --radio-borde: 5px;
+}
+
+
+
+/* Para usar la fuente en los títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+}
+
+
+/*Comienza css de body*/
+body {
+    background: linear-gradient(90deg, var(--color-fondo) 0%, #b07a4c 50%, var(--color-primario) 100%);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+    padding-top: 70px;
+    scroll-behavior: smooth;
+}
+/*comienza css de header*/
+header { 
+    background-image: url('imágenes/foto_fondo_header.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-detallesylinks);
+    text-align: center;
+    padding: 120px 0px;
+    
+}
+header p{
+    font-weight: bold;
+}
+
+
+/*comienza css de la barra de navegación*/
+nav {
+    background-color: var(--color-header);
+    color: var(--color-texto);
+    padding: 1rem 0.5rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--color-detallesylinks);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: var(--color-hover);
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+.logo-header img{
+    height: 60px;
+    width: auto;
+}
+
+
+main {
+    text-align: center;
+}
+
+main h2{
+    font-size: xx-large;
+    padding: var(--espaciado-seccion);
+}
+
+
+/*Comienza css de agricultura*/
+#Agricultura section{
+    background-color: var(--color-fondo) ;
+    border-radius: var(--radio-borde);
+    color: var(--color-texto);
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: var(--ancho-maximo);
+    box-shadow: var(--color-borde) 0 3px 15px;
+}
+
+#Agricultura section:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.qué-es p{
+    border: var(--color-secundario) 3px solid;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.qué-es h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tipos-agricultura {
+    color: var(--color-texto);
+    padding: 2rem;
+    max-width: 400px;
+}
+
+.tipos-agricultura h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tipos-agricultura p{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.tipos-agricultura ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tipos-agricultura li {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: var(--radio-borde);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.tipos-agricultura li p {
+    display: none;
+    margin-top: 0.5rem;
+}
+
+.tipos-agricultura li:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+}
+
+.tipos-agricultura li:hover p {
+    display: block;
+    text-align: justify;
+    border: var(--color-secundario) 3px solid;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+
+.historia-agricultura {
+    color: var(--color-texto);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.historia-contenido p {
+    font-size: 1.2rem;
+    border: var(--color-secundario) 3px solid;
+    padding: 2rem;
+    margin: 3rem auto;
+}
+
+.historia-aprendizaje {
+    border: var(--color-texto) 3px solid;
+}
+
+.historia-aprendizaje p {
+    border: none;
+}
+
+/*Comienza css de footer*/
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-detallesylinks);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
