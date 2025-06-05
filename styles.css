@@ -11,7 +11,6 @@
     --color-secundario:#83741b;
     --color-detallesylinks: white;
 
-
     --color-header: #97862e;
     --color-footer: #97862e;
     --color-hover: #8d2535;
@@ -22,6 +21,7 @@
     --espaciado-seccion: 2rem;
     --ancho-maximo: 1000px;
     --radio-borde: 5px;
+    --tamano-parrafo: 1.2rem;
 }
 
 
@@ -42,7 +42,7 @@ body {
     scroll-behavior: smooth;
 }
 /*comienza css de header*/
-header { 
+header #Inicio { 
     background-image: url('foto_fondo_header.png');
     background-size: cover;
     background-position: center;
@@ -56,6 +56,17 @@ header p{
 }
 
 
+header .construcion { 
+    background-image: url('foto_fondo_header.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-detallesylinks);
+    text-align: center;
+    padding: 120px 0px;
+}
+
+
+
 /*comienza css de la barra de navegación*/
 nav {
     background-color: var(--color-header);
@@ -67,7 +78,7 @@ nav {
     width: 100%;
     z-index: 1000;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1rem;
 }
 
@@ -128,7 +139,7 @@ main h2{
     border: var(--color-secundario) 3px solid;
     padding: 1rem;
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: var(--tamano-parrafo);
 }
 
 .qué-es h3{
@@ -150,7 +161,7 @@ main h2{
 .tipos-agricultura p{
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: var(--tamano-parrafo);
 }
 
 .tipos-agricultura ul {
@@ -176,6 +187,7 @@ main h2{
     margin-top: 0.5rem;
 }
 
+
 .tipos-agricultura li:hover {
     background-color: var(--color-hover);
     cursor: pointer;
@@ -187,6 +199,7 @@ main h2{
     border: var(--color-secundario) 3px solid;
     padding: 0.5rem;
     margin-top: 0.5rem;
+    font-size: var(--tamano-parrafo);
 }
 
 
@@ -198,7 +211,7 @@ main h2{
 }
 
 .historia-contenido p {
-    font-size: 1.2rem;
+    font-size: var(--tamano-parrafo);
     border: var(--color-secundario) 3px solid;
     padding: 2rem;
     margin: 3rem auto;
@@ -228,3 +241,194 @@ footer p {
     font-size: 0.9rem;
 }
 
+
+
+/*comienza css de sobre nosotros*/
+
+#sobre-nosotros section{
+    background-color: var(--color-fondo) ;
+    border-radius: var(--radio-borde);
+    color: var(--color-texto);
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: var(--ancho-maximo);
+    box-shadow: var(--color-borde) 0 3px 15px;
+}
+
+#sobre-nosotros section:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.proposito {
+    text-align: center;
+    padding: 2rem;
+}
+
+.proposito h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.proposito p{
+    font-size: var(--tamano-parrafo);
+    border: var(--color-secundario) 3px solid;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.nombre {
+    text-align: center;
+    padding: 2rem;
+}
+
+.nombre h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.nombre p {
+    font-size: var(--tamano-parrafo);
+    border: var(--color-secundario) 3px solid;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.surge h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.surge p {
+    font-size: var(--tamano-parrafo);
+    border: var(--color-secundario) 3px solid;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.imagen-proyecto-tercer-lugar {
+    border: var(--color-detallesylinks) 3px solid;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
+.actividades h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.actividades p {
+    font-size: var(--tamano-parrafo);
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.actividades ul {
+    list-style: none;
+}
+
+.actividades ul li {
+    background: url('hoja-list-blanca.png') no-repeat left center;
+    background-size: 1.5em 1.5em;
+    padding-left: 2em;
+    margin-bottom: 0.5em;
+    padding: 1rem 0 1rem 2rem ;
+    margin: 0;
+    font-size: var(--tamano-parrafo);
+    text-align: left;
+}
+
+.nosotras h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.nosotras p {
+    font-size: var(--tamano-parrafo);
+    border: var(--color-secundario) 3px solid;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#presentado {
+    margin-top: 2rem;
+    text-align: center;
+    border: var(--color-texto) 3px solid;
+    padding: 1rem;
+}
+
+#presentado p {
+    font-size: var(--tamano-parrafo);
+    margin: 0.5rem 0;
+    border: none;
+}
+
+#presentando h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.foto-creadoras {
+    border: var(--color-detallesylinks) 3px solid;
+    width: auto;
+    max-height: 600px;
+    height: 100%;
+    margin-top: 1rem;
+}
+
+
+.agradecimientos h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.agradecimientos p {
+    font-size: var(--tamano-parrafo);
+    border: var(--color-secundario) 3px solid;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* Comienza css de contacto */  
+
+.contacto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contacto p {
+    font-size: var(--tamano-parrafo);
+    border: var(--color-secundario) 3px solid;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.contacto form {
+    display: block;
+    max-width: 600px;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    border-radius: var(--radio-borde);
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.contacto label {
+    font-size: var(--tamano-parrafo);
+    text-align: center;
+    background-color: var(--color-secundario);
+    border-radius: var(--radio-borde);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contacto input, textarea {
+    background-color: var(--color-texto);
+    color: var(--color-detallesylinks);
+    border: var(--color-hover) 2px solid;
+    border-radius: var(--radio-borde);
+    margin: 1rem 0;
+}
