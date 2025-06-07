@@ -50,7 +50,7 @@ header #Inicio {
     text-align: center;
     padding: 120px 0px;
     
-}
+} 
 header p{
     font-weight: bold;
 }
@@ -397,6 +397,7 @@ footer p {
 .contacto h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .contacto p {
@@ -404,31 +405,41 @@ footer p {
     border: var(--color-secundario) 3px solid;
     padding: 1rem;
     margin-top: 2rem;
-}
-
-.contacto form {
-    display: block;
-    max-width: 600px;
-    background-color: var(--color-primario);
-    color: var(--color-texto);
-    border-radius: var(--radio-borde);
-    margin-top: 2rem;
-    padding: 2rem;
-}
-
-.contacto label {
-    font-size: var(--tamano-parrafo);
     text-align: center;
-    background-color: var(--color-secundario);
-    border-radius: var(--radio-borde);
-    display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.contacto input, textarea {
-    background-color: var(--color-texto);
+form{
+    background-color: var(--color-header);
+    color: var(--color-texto);
+    border-radius: 10px;
+    box-shadow: var(--color-texto) 0 3px 15px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label{
+    background-color:var(--color-primario) ;
+    border-radius: 5px;
+    text-align: center;
+    margin: 1rem;
+}
+
+form input, textarea{
+    background-color: var(--color-borde);
+    border: solid var(--color-hover);
+    color: var(--color-texto);
+}
+
+form ::placeholder{
+    color: var(--color-texto);
+}
+
+form button{
+    background-color: var(--color-primario);
+    padding: 5px;
     color: var(--color-detallesylinks);
-    border: var(--color-hover) 2px solid;
-    border-radius: var(--radio-borde);
-    margin: 1rem 0;
+    border: none;
+    border-radius: 5px;
 }
