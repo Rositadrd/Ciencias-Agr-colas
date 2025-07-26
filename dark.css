@@ -5,17 +5,18 @@
 }
 
 :root {
-    --color-fondo: #97522d;
-    --color-texto: black;
-    --color-primario: #83401d;
-    --color-secundario:#83741b;
-    --color-detallesylinks: white;
+    --color-fondo: #2d1a10; /* fondo más oscuro */
+    --color-texto: #f2e8dc; /* texto claro */
+    --color-primario: #4a2a17; /* equivalente oscuro de #83401d */
+    --color-secundario: #4b4410; /* más oscuro que #83741b */
+    --color-detallesylinks: #f8f1e6; /* enlaces y detalles claros */
 
-    --color-header: #97862e;
-    --color-footer: #97862e;
-    --color-hover: #8d2535;
-    --color-borde: #d1bfa3;
+    --color-header: #4b3f10; /* header con tono dorado oscuro */
+    --color-footer: #4b3f10; /* igual al header */
+    --color-hover: #aa3d4f; /* más vibrante pero oscuro */
+    --color-borde: #7d6951; /* borde oscuro pero contrastante */
 
+    /* Las siguientes propiedades permanecen igual */
     --fuente-principal: "Red Hat Text", sans-serif;
     --fuente-titulos: "Delius Swash Caps", cursive;
     --espaciado-seccion: 2rem;
@@ -119,9 +120,6 @@ nav ul li {
     font-size: 1rem;
     margin: auto;
 }
-
-
-
 
 
 
