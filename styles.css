@@ -456,3 +456,259 @@ form button{
     border: none;
     border-radius: 5px;
 }
+
+
+/*comienza css de huertos caseros*/
+
+#Huertos-caseros section{
+    background-color: var(--color-fondo) ;
+    border-radius: var(--radio-borde);
+    color: var(--color-texto);
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: var(--ancho-maximo);
+    box-shadow: var(--color-borde) 0 3px 15px;
+}
+
+#Huertos-caseros section:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.qué-es-huerto p , .importancia p , .iniciar-huerto p {
+    border: var(--color-secundario) 3px solid;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: var(--tamano-parrafo);
+}
+
+.qué-es-huerto h3 , .importancia h3 , .iniciar-huerto h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.iniciar-huerto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.iniciar-huerto ul li {
+    background-size: 1.5em 1.5em;
+    padding-left: 2em;
+    margin-bottom: 0.5em;
+    padding: 1rem 0 1rem 2rem ;
+    margin: 0;
+    font-size: var(--tamano-parrafo);
+    text-align: left;
+}
+.iniciar-huerto ul li p{
+    background-color: var(--color-primario);
+}
+
+
+
+.tipos-huertos {
+    color: var(--color-texto);
+    padding: 2rem;
+    max-width: 400px;
+}
+
+.tipos-huertos h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tipos-huertos p{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: var(--tamano-parrafo);
+}
+
+.tipos-huertos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tipos-huertos li {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: var(--radio-borde);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.tipos-huertos li p {
+    display: none;
+    margin-top: 0.5rem;
+}
+
+
+.tipos-huertos li:hover {
+    background-color: rgba(141, 37, 53, 0.8); /* color-hover con opacidad */
+    cursor: pointer;
+}
+
+.tipos-huertos li:hover p {
+    display: block;
+    text-align: justify;
+    border: var(--color-secundario) 3px solid;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: var(--tamano-parrafo);
+}
+
+/*Comienza css de ciencias agrícolas y profesiones*/
+
+#Ciencias-agrícolas section{
+    background-color: var(--color-fondo) ;
+    border-radius: var(--radio-borde);
+    color: var(--color-texto);
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: var(--ancho-maximo);
+    box-shadow: var(--color-borde) 0 3px 15px;
+}
+
+#Ciencias-agrícolas section:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.qué-es-ca p , .Programas-de-estudio p , .Profesiones p, .Universidades p {
+    border: var(--color-secundario) 3px solid;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: var(--tamano-parrafo);
+}
+
+.qué-es-ca h3 , .Programas-de-estudio h3 , .Profesiones h3, .Universidades h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.Programas-de-estudio ul, .Profesiones ul, .Universidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.Programas-de-estudio ul li, .Profesiones ul li, .Universidades ul li {
+    background-size: 1.5em 1.5em;
+    padding-left: 2em;
+    margin-bottom: 0.5em;
+    padding: 1rem 0 1rem 2rem ;
+    margin: 0;
+    font-size: var(--tamano-parrafo);
+    text-align: left;
+}
+.Programas-de-estudio ul li p , .Profesiones ul li p, .Universidades ul li p {
+    background-color: var(--color-primario);
+}
+
+/*Comienza css de entrevistas*/
+
+#Entrevistas section{
+    background-color: var(--color-fondo) ;
+    border-radius: var(--radio-borde);
+    color: var(--color-texto);
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: var(--ancho-maximo);
+    box-shadow: var(--color-borde) 0 3px 15px;
+}
+
+#Entrevistas section:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+.entrevista-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+.entrevista-contenido img {
+    border: var(--color-detallesylinks) 3px solid;
+    border-radius: var(--radio-borde);
+    max-width: 100%;
+    height: auto;
+}
+.entrevista-contenido p{
+    border: var(--color-secundario) 3px solid;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: var(--tamano-parrafo);
+    max-width: var(--ancho-maximo);
+}
+#audio-pellito {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+}
+.link-fb {
+    color: var(--color-detallesylinks);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.link-fb:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
+}
+
+#audio-MV {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+/*Hamburger menu*/
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-detallesylinks);
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+
+/* Media css */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-header);    
+  }
+
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.active {
+    display: block;
+  }
+   
+}
