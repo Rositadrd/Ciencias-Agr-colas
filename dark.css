@@ -714,5 +714,14 @@ form button{
   nav.active {
     display: block;
   }
-   
+
+      .contacto p strong{
+    font-size: xx-small;
+  }
+  .foto-creadoras{
+    max-height: 300px;
+    height: auto;
+ } 
+    
+
 }
