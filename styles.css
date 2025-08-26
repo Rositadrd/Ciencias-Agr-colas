@@ -712,7 +712,7 @@ form button{
   }
 
      .contacto p strong{
-    font-size: medium;
+    font-size: small;
   }
   .foto-creadoras{
     max-height: 300px;
@@ -720,4 +720,5 @@ form button{
 }
 
 }
+
 
