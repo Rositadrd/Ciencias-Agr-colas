@@ -231,14 +231,6 @@ main h2{
     margin: 3rem auto;
 }
 
-.historia-aprendizaje {
-    border: var(--color-texto) 3px solid;
-}
-
-.historia-aprendizaje p {
-    border: none;
-}
-
 /*Comienza css de footer*/
 footer {
     background-color: var(--color-footer);
@@ -725,3 +717,4 @@ form button{
     
 
 }
+
