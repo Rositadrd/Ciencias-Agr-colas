@@ -711,7 +711,7 @@ form button{
     display: block;
   }
 
-     .contacto p{
+     .contacto p strong{
     font-size: medium;
   }
   .foto-creadoras{
@@ -720,3 +720,4 @@ form button{
 }
 
 }
+
